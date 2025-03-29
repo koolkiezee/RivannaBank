@@ -258,9 +258,80 @@ main{
     border: none;
 }
 .form-buttons{
+    padding-top: 20px;
 display: flex;
 justify-content: center;
 gap: 20px;
+}
+/*----------------- LOGIN ------------------- */
+.login-account{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 20px
+}
+.login-account input{
+    width:500px;
+    height: 30px;
+}
+/*----------------- SEND MONEY ------------------- */
+.send-money{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+.container-img img{
+    width: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.send-money .form-block{
+    padding-left: 0px;
+}
+/*----------------- CHECK BALANCE ------------------- */
+.response{
+    display: none;
+}
+/*----------------- TRANSACTION HISTORY ------------------- */
+.transaction-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    max-height: 500px;
+}
+.transaction-table-wrapper{
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #D9EEE1;
+    border-radius: 15px;
+}
+.transaction-table {
+    width: 700px;
+    border-collapse: collapse;
+}
+.transaction-table thead{
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-top: 5px;
+    background-color: #154A46;
+    border-bottom: 2px solid #154A46;
+}
+.transaction-table th{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #154A46;
+}
+.transaction-table td{
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #679979;
 }
 /*----------------- FOOTER ------------------- */
 footer{

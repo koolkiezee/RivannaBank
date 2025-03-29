@@ -6,3 +6,12 @@ def home(request):
 
 def createAccount(request):
     return render(request,"createAccount.html")
+
+def login(request):
+    return render(request,"login.html")
+def sendMoney(request):
+    return render(request,"sendMoney.html")
+def transactionHistory(request):
+    return render(request,"transactionHistory.html")
+def checkBalance(request):
+    return render(request,"checkBalance.html")

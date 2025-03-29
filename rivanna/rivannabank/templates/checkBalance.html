@@ -1,0 +1,42 @@
+{%extends "base.html"%}{% block title%} Login to your Account{% endblock%}
+{% block content%}
+<div class="body-container send-money">
+    <div class="balance-container-img">
+        <img src="../static/images/3Dgraph.png" alt="3D Graph with a credit card">
+    </div>
+    <div class="check-balance-container">
+    <div class="heading">
+        <p>Check Balance</p>
+    </div>
+    <div class="request">
+        <div class="sub-heading">
+            Enter your password to check your balance.
+            </div>
+        <div class="form-block">
+            <form method="post" action="/send-money/">
+                <div class="login-account">
+                    <div class="form-group">
+                        <input type="text" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button class="btn submit" type="back">Back</button>
+                    <button class="btn submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="response">
+        <div class="sub-heading">
+        <!-- This is where the balance will be displayed after form submission -->
+        {% if balance %}
+            <p>Your current balance is </p>
+            <p>${{ balance }}</p>
+        {% else %}
+            <p>Please enter your password to view your balance.</p>
+        {% endif %}
+        </div>
+    </div>
+    </div>  
+</div>
+{% endblock %}
